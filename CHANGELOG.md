@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.1](https://github.com/robe-rt/volvo-azure-functions-zip/compare/v1.1.0...v1.1.1) (2024-12-12)
+
+
+### Bug Fixes
+
+* don't run jobs on release ([#6](https://github.com/robe-rt/volvo-azure-functions-zip/issues/6)) ([d14935d](https://github.com/robe-rt/volvo-azure-functions-zip/commit/d14935defcb6be745b8b2521f6eefae6dc8db24a))
+
 ## [1.1.0](https://github.com/robe-rt/volvo-azure-functions-zip/compare/v1.0.0...v1.1.0) (2024-12-12)
 
 
