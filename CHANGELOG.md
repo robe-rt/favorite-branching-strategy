@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.2.0](https://github.com/robe-rt/favorite-branching-strategy/compare/v2.1.0...v2.2.0) (2024-12-12)
+
+
+### Features
+
+* add readme repo description ([#15](https://github.com/robe-rt/favorite-branching-strategy/issues/15)) ([b9242cb](https://github.com/robe-rt/favorite-branching-strategy/commit/b9242cbfb6aa85ee55b5d915adc15dff2f2c30a2))
+
 ## [2.1.0](https://github.com/robe-rt/favorite-branching-strategy/compare/v2.0.0...v2.1.0) (2024-12-12)
 
 
