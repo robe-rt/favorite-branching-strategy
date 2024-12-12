@@ -1,5 +1,10 @@
 # favorite-branching-strategy
 
+This branching strategy is inspired by the strategy [svelte](https://github.com/sveltejs/svelte) uses. Another inspiration was from a very based gentleman on a [YouTube video](https://www.youtube.com/watch?v=7gEbHsHXdn0&t=1s&ab_channel=ThePrimeagen)
+
+> _Rebase private commits, merge public commits. Never change public history, do whatever you want with private history.
+> By public, I mean 2+ developers depend on it._ - **jimboxx7**
+
 ## Possible problems and solutions
 
 **Problem:**
