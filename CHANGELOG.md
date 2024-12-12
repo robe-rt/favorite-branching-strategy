@@ -1,5 +1,23 @@
 # Changelog
 
+## [2.0.0](https://github.com/robe-rt/volvo-azure-functions-zip/compare/v1.1.1...v2.0.0) (2024-12-12)
+
+
+### ⚠ BREAKING CHANGES
+
+* added a breaking change ([#12](https://github.com/robe-rt/volvo-azure-functions-zip/issues/12))
+
+### Features
+
+* add another print to main ([#9](https://github.com/robe-rt/volvo-azure-functions-zip/issues/9)) ([0be63b4](https://github.com/robe-rt/volvo-azure-functions-zip/commit/0be63b4fce3befdc5fd857b80c02f07af8d7d73b))
+* add another print to serializer ([#8](https://github.com/robe-rt/volvo-azure-functions-zip/issues/8)) ([f8fc653](https://github.com/robe-rt/volvo-azure-functions-zip/commit/f8fc653d58394fcaa31ed812caf498037fce3c24))
+* added a breaking change ([#12](https://github.com/robe-rt/volvo-azure-functions-zip/issues/12)) ([df9fbc0](https://github.com/robe-rt/volvo-azure-functions-zip/commit/df9fbc08d5399b3d6abf25bbce59985628c22637))
+
+
+### Bug Fixes
+
+* fixed a bug ([#11](https://github.com/robe-rt/volvo-azure-functions-zip/issues/11)) ([91dd7bc](https://github.com/robe-rt/volvo-azure-functions-zip/commit/91dd7bce2fb40f64a57e82c73708ff9867c658a3))
+
 ## [1.1.1](https://github.com/robe-rt/volvo-azure-functions-zip/compare/v1.1.0...v1.1.1) (2024-12-12)
 
 
