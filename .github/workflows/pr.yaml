@@ -1,35 +1,38 @@
 name: PR CI
 
 on:
-  pull_request:
-    branches:
-      - main
+  pull_request_target:
+    types:
+      - opened
+      - edited
+      - synchronize
+      - reopened
 
-env:
-  NODE_VERSION: 22
+permissions:
+  pull-requests: read
 
 jobs:
-  commitlint:
-    name: Commit Lint Job
+  conventional_pr_title:
+    name: Validate PR title
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: amannn/action-semantic-pull-request@v5
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          fetch-depth: 0
+          requireScope: false
+          # Configure additional validation for the subject based on a regex.
+          # This example ensures the subject doesn't start with an uppercase character.
+          subjectPattern: ^(?![A-Z]).+$
+          # If `subjectPattern` is configured, you can use this property to override
+          # the default error message that is shown when the pattern doesn't match.
+          # The variables `subject` and `title` can be used within the message.
+          subjectPatternError: |
+            The subject "{subject}" found in the pull request title "{title}"
+            didn't match the configured pattern. Please ensure that the subject
+            doesn't start with an uppercase character.
 
-      - name: Set up Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: ${{ env.NODE_VERSION }}
-
-      - name: Install commitlint
-        run: |
-          npm install --save-dev @commitlint/{cli,config-conventional}
-
-      - name: Validate PR commits with commitlint
-        run: npx commitlint --from ${{ github.event.pull_request.head.sha }}~${{ github.event.pull_request.commits }} --to ${{ github.event.pull_request.head.sha }} --verbose
-
-  editor_config_job:
+  editor_config:
     name: Editor Config Job
     runs-on: ubuntu-latest
     steps:
