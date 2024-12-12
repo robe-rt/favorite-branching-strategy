@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.0](https://github.com/robe-rt/volvo-azure-functions-zip/compare/v1.0.0...v1.1.0) (2024-12-12)
+
+
+### Features
+
+* add semantic pr action ([#4](https://github.com/robe-rt/volvo-azure-functions-zip/issues/4)) ([2370d06](https://github.com/robe-rt/volvo-azure-functions-zip/commit/2370d063ea5430e0282b8e169be4e0a5f06adc8c))
+
 ## 1.0.0 (2024-12-12)
 
 
