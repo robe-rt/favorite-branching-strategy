@@ -12,7 +12,8 @@ permissions:
   pull-requests: read
 
 jobs:
-  conventional_pr_title:
+  validate_pr_title:
+    if: "!contains(github.event.pull_request.title, 'chore(main): release')"
     name: Validate PR title
     runs-on: ubuntu-latest
     steps:
@@ -33,6 +34,7 @@ jobs:
             doesn't start with an uppercase character.
 
   editor_config:
+    if: "!contains(github.event.pull_request.title, 'chore(main): release')"
     name: Editor Config Job
     runs-on: ubuntu-latest
     steps:
