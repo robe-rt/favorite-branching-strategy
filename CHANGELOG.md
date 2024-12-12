@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.1.0](https://github.com/robe-rt/favorite-branching-strategy/compare/v2.0.0...v2.1.0) (2024-12-12)
+
+
+### Features
+
+* add readme ([#13](https://github.com/robe-rt/favorite-branching-strategy/issues/13)) ([7e58ad1](https://github.com/robe-rt/favorite-branching-strategy/commit/7e58ad11817e726230e1b3eaabbf3b9a63038a3a))
+
 ## [2.0.0](https://github.com/robe-rt/volvo-azure-functions-zip/compare/v1.1.1...v2.0.0) (2024-12-12)
 
 
